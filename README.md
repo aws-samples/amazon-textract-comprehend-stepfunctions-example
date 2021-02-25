@@ -15,7 +15,7 @@ These prequisites should be installed first:
 
 Once those are installed, clone this repository:
 
-`git clone https://github.com/jhy/textract-comprehend-sample.git`
+`git clone https://github.com/aws-samples/amazon-textract-comprehend-stepfunctions-example`
 
 Then import the project into your IDE, and review the sample code. There are two models, *cdk* and *lambda*. The *cdk* module contains the application and infrastructure CDK code. It is responsible for building and deploying the serverless Lambda functions. It defines the Step Functions flow.
 
@@ -25,7 +25,7 @@ The *lambda* module contains the application runtime code as Lambda functions. T
 
 Before deploying the sample, you will need to train a Comprehend classifier. A very simple reference example is located in `/samples/trainer.csv`. (It contains the plain text of three sample documents, one per row; in practice you will train with many more samples each.) To train the classifier:
 
-1. Visit the [Comprehend console](https://ap-southeast-2.console.aws.amazon.com/comprehend/v2/home?region=ap-southeast-2#classification) (switch to the region you wish to use)
+1. Visit the [Comprehend console](https://console.aws.amazon.com/comprehend/v2/home#classification) (switch to the region you wish to use)
 2. Click *Train classifier*
 3. Give it a name and check the other details (the defaults are fine to start - use a Multi-class classifier)
 4. Specify the S3 location of the training file (upload it first)
