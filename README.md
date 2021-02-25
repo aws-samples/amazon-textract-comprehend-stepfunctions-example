@@ -19,7 +19,7 @@ Once those are installed, clone this repository:
 
 Then import the project into your IDE, and review the sample code. There are two models, *cdk* and *lambda*. The *cdk* module contains the application and infrastructure CDK code. It is responsible for building and deploying the serverless Lambda functions. It defines the Step Functions flow.
 
-The *lambda* module contains the application runtime code as Lambda functions. These functions show examples of calling extracting a single page from a PDF and calling Textract synchronously, classifying it's content using a Comprehend custom classifier, and an asynchronous Textract call with an AWS SNS ping on completion. The initial flow is triggered by an upload to S3 which starts a Step Functions execution.
+The *lambda* module contains the application runtime code as Lambda functions. These functions show examples of calling extracting a single page from a PDF and calling Textract synchronously, classifying its content using a Comprehend custom classifier, and an asynchronous Textract call with an AWS SNS ping on completion. The initial flow is triggered by an upload to S3 which starts a Step Functions execution.
 
 ## Train a sample classifier
 
